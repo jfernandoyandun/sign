@@ -1,0 +1,12 @@
+version: '2'
+services:
+    sign-postgresql:
+        container_name: sign-postgresql
+        image: postgres:9.5.4
+        # volumes:
+        #     - ~/volumes/jhipster/sign/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=sign
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
